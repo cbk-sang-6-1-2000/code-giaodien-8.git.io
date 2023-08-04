@@ -1,0 +1,584 @@
+.site-header .logo-mobile {
+    display: none;
+}
+
+.display-none {
+    display: none;
+}
+
+h1 br {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .site-main .container .introduce .picture-not-reverse {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .site-main .container .introduce .picture-not-reverse::after {
+        display: none;
+    }
+
+    .site-main .container .introduce .picture-reverse::after {
+        display: none;
+    }
+
+    .site-main .container .introduce .site-title {
+        margin-top: 30px;
+    }
+
+    #main .container .introduce .picture-reverse {
+        margin: auto;
+    }
+
+    .site-main .introduce-teachers .row-teachers .col-md-12 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .site-main .introduce-teachers .container .title-introduce {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .site-main .introduce-teachers .container .context-introduce-teachers, .site-main .introduce-teachers .container .span-introduct-teachers {
+        max-width: 100%;
+    }
+
+    .site-main .introduce-teachers .container .brand-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .picture-teacher {
+        margin: auto;
+    }
+
+    .row-food img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        max-width: 100%;
+    }
+
+    .site-main .introduce-teachers .row-food figure {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .site-main .introduce-teachers .row-food figcaption {
+        max-width: 100%;
+    }
+
+    .picture-about {
+        max-width: 100%;
+    }
+
+    .site-main .About-Hokenzenbu .container .content-about {
+        max-width: 100%;
+    }
+
+    .site-main .About-Hokenzenbu .container h3 {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .site-main .site-product .container .row {
+        flex-wrap: nowrap;
+    }
+
+    .site-main .site-product .container .row .col-md-12{
+        max-width: 50%;
+    }
+
+    .site-main .site-product .container .row .col-md-12 a {
+        font-size: 18px;
+    }
+
+    .site-main .site-product .container {
+        padding: 50px 15px;
+    }
+
+    .site-main .docter .container img {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .site-main .docter .text {
+        margin-top: 30px;
+        font-size: 16px;
+        padding-left: 40px;
+    }
+
+    .site-footer .container {
+        padding: 30px 15px;
+    }
+
+    .site-footer .container .footer-top {
+        flex-direction: column;
+    }
+
+    .site-footer .container .footer-top nav {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .site-footer .container .footer-top img {
+        width: 50%;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .footer-bottom ul {
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom ul li::after {
+        display: none;
+    }
+
+    .footer-bottom ul li{
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .footer-bottom p {
+        margin-bottom: 0;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .header-bottom .site-brand-center {
+        text-align: center;
+    }
+}
+
+@media (max-width: 740px) {
+    .site-header .logo {
+        display: none;
+    }
+
+    .site-header .logo-mobile {
+        display: block;
+    } 
+
+    .site-main .site-product .container .row {
+        flex-wrap: wrap;
+    }
+
+    .site-main .site-product .container .row .col-md-12{
+        max-width: 100%;
+    }
+
+    h1 {
+        color: #000;
+        text-align: center;
+        font-family: 'Yu Gothic';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        max-width: 360px;
+    }
+
+    h1 br {
+        display: block;
+    }
+
+    .site-menu span {
+        display: none;
+    }
+
+    .header-bottom .container {
+        padding: 0 15px;
+        max-height: 80px;
+    }
+
+    .site-brand-center {
+        text-align: center;
+    }
+
+    .site-brand-center img {
+        max-width: 124px;
+    }
+
+    .site-menu {
+        flex: 1;
+    }
+
+    /* css main */
+
+    .site-main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .site-main .background-banner {
+        width: 100%;
+        max-height: 250px;
+        margin-top: 5px;
+        border-radius: 20px;
+        background: url(../images/assests/hihi.png), lightgray 50% / cover no-repeat;
+    }
+
+    .site-main .background-banner::after {
+        display: none;
+    }
+
+    .site-main .container .site-banner {
+        background: #FFF1E8;
+        top: 195px;
+        width: 100%;
+    }
+
+    .site-main .container .site-banner h2 {
+        font-size: 20px;
+        margin-right: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .site-main .container .site-banner p {
+        color: #212121;
+        font-size: 26px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .site-main .container .site-banner .close {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 15px;
+    }
+    .site-main .container .site-banner .close img {
+        max-width: 23px;
+        max-height: 23px;
+    }
+    .site-main .container .site-banner .context {
+        color: #212121;
+        font-size: 26px;
+        text-align: center;
+        margin: 0;
+ 
+    }
+
+    .site-main .container .site-banner .button-next {
+        max-width: 274px;
+        max-height: 50px;
+        margin-left: 0;
+        margin-top: 27px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .site-main .container .site-banner .button-next a {
+        color: #FFF;
+        font-size: 22px;
+
+    }
+    .footer-bottom p {
+        display: none;
+    }
+
+    /* */
+    .site-main .container .introduce {
+        margin-top: 300px;
+        padding: 35px 30px;
+    }
+
+    .site-main .container .introduce .picture-not-reverse {
+        margin: auto;
+    }
+
+    .site-main .container .introduce .picture-not-reverse::after {
+        display: none;
+    }
+
+    .col-introduce {
+        padding: 0;
+    }
+    .site-main .container .introduce .site-title {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .site-main .container .introduce .site-title h3 {
+        font-size: 24px;
+    }
+
+    .site-main .container .introduce .site-title .circle {
+        padding: 8px 9px;
+        font-size: 26px;
+    }
+
+    .site-main .container .introduce .site-title p {
+        color: #212121;
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .padding-left  {
+        padding: 0;
+    }
+
+    .site-main .container .introduce .context-introduce {
+        color: #444;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .site-main .container .introduce .picture-reverse::after {
+        display: none;
+    }
+
+    #main .container .introduce .picture-reverse {
+        padding-left: 0;
+    }
+
+    .display-none {
+        color: #212121;
+        font-family: 'Yu Gothic';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 34px;
+        display: block;
+    }
+
+    .padding-right {
+        padding: 0;
+    }
+
+    .site-main .container .introduce .button-next {
+        display: none;
+    }
+
+    /* */
+    .site-main .introduce-teachers {
+        margin-top: 50px;
+    }
+
+    .site-main .introduce-teachers .row-teachers {
+        padding: 0 15px;
+    }
+
+    .site-main .introduce-teachers .container {
+        padding: 0 15px;
+    }
+
+    .site-main .introduce-teachers .container .title-introduce {
+        font-size: 24px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .site-main .introduce-teachers .container .context-introduce-teachers, .site-main .introduce-teachers .container .span-introduct-teachers {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .site-main .introduce-teachers .container .brand-logo {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .picture-teacher {
+        margin: auto;
+    }
+
+    .site-main .introduce-teachers .container .site-picture-teachers {
+        padding-left: 0;
+    }
+
+    .site-main .introduce-teachers .container .site-picture-teachers p {
+        font-size: 14px;
+    }
+
+    .site-main .introduce-teachers .row-food {
+        margin-top: 40px;
+        padding: 30px 15px 0 15px;
+    }
+
+    .site-main .introduce-teachers .row-food .col-md-12 {
+        padding: 15;
+    }
+
+    .site-main .introduce-teachers .row-food figcaption {
+        font-size: 14px;
+    }
+
+    .site-main .About-Hokenzenbu .container {
+        padding: 50px 15px;
+    }
+
+    .site-main .About-Hokenzenbu .container h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .site-main .About-Hokenzenbu .container h3 a {
+        font-size: 24px;
+    }
+
+    .site-main .About-Hokenzenbu .container .content-about .context-1,  .site-main .About-Hokenzenbu .container .content-about .context-2{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .site-main .About-Hokenzenbu .container .content-about {
+        padding-left: 0;
+    }
+
+    .site-main .click-button {
+        padding: 0 50px;
+    }
+
+    .site-main .click-button .button-next {
+        padding: 0 3px;
+    }
+    .site-main .click-button .button-next a {
+        font-size: 18px;
+        padding: 15px 14px;
+    }
+
+    .site-main .site-product .container {
+        padding: 50px 15px;
+    }
+
+    .site-main .site-product .container h3 {
+        font-size: 24px;
+    }
+
+    .site-main .site-product .container .title{
+        max-width: 200px;
+    }
+
+    .site-main .site-product .container .title svg{
+        height: 150px;
+    }
+
+    .site-main .site-product .container .svg-left {
+        position: absolute;
+        left: -35%;
+        bottom: -56px;
+        z-index: -1;
+    }
+
+    .site-main .site-product .container .svg-right {
+        position: absolute;
+        right: -35%;
+        bottom: -56px;
+        z-index: -1;
+    }
+
+    .site-main .site-product .container .col-md-12 {
+        padding: 0;
+    }
+
+    .site-main .site-product .container .col-md-12 a {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .site-main .site-product .container .col-md-12 a br {
+        display: none;
+    }
+
+    .site-thumbnail-right {
+        padding-left: 0;
+    }
+
+    .site-main .site-product .container .title-bottom h4 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .site-main .gallery .container {
+        padding: 30px 15px;
+    }
+
+    .site-main .docter .container {
+        margin-top: 50px;
+        padding: 30px 15px;
+    }
+
+    .site-main .docter .container h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .site-main .docter .text {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .site-main .docter .text p {
+        margin-bottom: 14px;
+    }
+
+    .site-main .docter .col-md-12 {
+        padding: 0;
+    }
+
+    .site-main .docter .row {
+        padding: 0 15px;
+    }
+
+    .site-main .docter .text ul {
+        margin-bottom: 14px;
+    }
+
+    .site-main .site-form-control .container {
+        padding-top: 50px;
+    }
+
+    .site-main .site-form-control .container form {
+        padding: 15px;
+    }
+
+    .form-check {
+        display: flex;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .circle-2 {
+        position: absolute;
+        left: 1.7%;
+        top: 16%;
+    }
+
+    .site-main .site-form-control .container .reservation-form label {
+        font-size: 14px;
+    }
+
+    .site-main .site-form-control .container .reservation-form input::placeholder {
+        font-size: 14px;
+    }
+
+    .site-main .site-form-control .container .reservation-form {
+        font-size: 14px;
+    }
+
+    .form-check-2 {
+        display: flex;
+    }
+
+    .form-check-input[type=checkbox] {
+        height: 23px;
+        position: relative;
+        top: 5px;
+    }
+}
+

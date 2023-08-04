@@ -1,0 +1,1031 @@
+@font-face {
+    font-family: 'Yu Gothic';
+    src: url('fonts/yu-gothic/yugothic.ttf');
+}
+
+@font-face {
+    font-family: 'Yu Gothic Bold';
+    src: url('fonts/yu-gothic/yugothib-bold.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    max-width: 1920px;
+}
+
+.container {
+    max-width: 1170px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* css header-top */
+.site-header {
+    position: fixed;
+    width: 100%;
+    max-width: 1920px;
+    z-index: 2;
+}
+.header-top {
+    height: 70px;
+    width: 100%;
+    background: #FFF1E8;;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: #000;
+    font-size: 30px;
+    font-family: 'Yu Gothic Bold';
+}
+
+h1 span {
+    color: #F39800;
+}
+
+/* css header bottom */
+
+.header-bottom .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 90px;
+}
+
+.header-bottom {
+    background: #F8F8F8;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.header-bottom .site-brand-left {
+    flex: 1;
+    margin-left: 2px;
+}
+
+
+
+.header-bottom .site-brand-center {
+    flex: 1;
+    text-align: left;
+    padding-right: 31px;
+}
+  
+.header-bottom .site-menu {
+    text-align: right;
+    position: relative;
+    z-index: 2;
+}
+
+.header-bottom .site-menu::after {
+    content: "";
+    width: 100px;
+    height: 40px;
+    top: 100%;
+    position: absolute;
+    background: none;
+    right: 0;
+}
+
+.header-bottom .site-menu .menu{
+    text-decoration: none;
+    background: #F39800;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Yu Gothic Bold';
+    padding: 12px 14px;
+    border-radius: 5px;
+}
+
+.header-bottom .site-menu ul{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 77px;
+    right: 0;
+    z-index: 2;
+    width: 350px;
+}
+
+.header-bottom .site-menu ul li {
+    margin-bottom: 24px;
+}
+
+.header-bottom .site-menu ul li a{
+    color: #212121;
+    font-family: 'Yu Gothic';
+    font-size: 20px;
+    font-weight: 700;
+    padding: 9px 34px 9px 26px;
+    opacity: 0.8999999761581421;
+    background: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.header-bottom .site-menu ul li a:hover {
+    color: red;
+    background: #8C8C8C;
+}
+.header-bottom .site-menu a img{
+    position: relative;
+    top: -2px;
+}
+
+/* css main */
+/* css banner */
+.site-main {
+    position: relative;
+    padding-top: 160px;
+}
+
+.site-main .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+}
+.site-main .background-banner {
+    background: url('images/assests/background-banner.jpg');
+    height: 600px;
+    object-fit: cover;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 40px;
+    color: #FFF;
+    z-index: -1;
+}
+
+.site-main .background-banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+}
+
+.site-main .container .site-banner {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 59px;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-main .container .site-banner h2 {
+    color: #F39800;
+    font-size: 35px;
+    font-family: 'RocknRoll One', sans-serif;
+    font-weight: 400;
+    margin-right: 56px;
+}
+
+.site-main .container .site-banner p {
+    color: #FFF;
+    text-align: right;
+    font-size: 45px;
+    font-family: 'RocknRoll One', sans-serif;
+    font-weight: 400;
+    margin: 27px 39px 27px 0;
+}
+
+.site-main .container .site-banner p span {
+    margin-right: 23px;
+}
+
+.site-main .container .site-banner .close {
+    text-align: center;
+    padding-left: 55px;
+    margin-bottom: 27px;
+}
+
+.site-main .container .site-banner .context {
+    color: #FFF;
+    text-align: right;
+    font-size: 45px;
+    font-family: 'RocknRoll One', sans-serif;
+    font-weight: 400;
+    margin-right: 53px;
+    margin-bottom: 30px;
+}
+
+.site-main .container .site-banner .button-next {
+    background: #F39800;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 145px;
+}
+
+.site-main .container .site-banner .button-next a {
+    color: #FFF;
+    font-size: 26px;
+    font-family: 'Yu Gothic Bold';
+    border-radius: 10px;
+    border: 2px dashed #FFF;
+    opacity: 0.5;
+    padding: 2px 18px;
+    text-decoration: none;
+    
+}
+
+.site-main .container .site-banner .button-next a img {
+    padding-right: 10px;
+}
+
+/* css main introduce */
+.site-main .container .introduce {
+    margin-top: 120px;
+    padding: 50px 50px 0 50px;
+    border-radius: 50px;
+    background: #FFF9F5;
+    position: relative;
+    z-index: -2;
+    padding-bottom: 62px;
+}
+
+.site-main .container .introduce .picture-introduce {
+    border-radius: 50px;
+    position: relative;
+    width: 100%;
+}
+.site-main .container .introduce .picture-not-reverse {
+    position: relative;
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.site-main .container .introduce .picture-not-reverse::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    left: 40px;
+    top: 40px;
+    z-index: -1;
+}
+
+.site-main .container .introduce .site-title p{
+    color: #212121;
+    font-size: 30px;
+    font-family: 'Yu Gothic Bold';
+    margin-bottom: 16px;
+}
+
+.site-main .container .introduce .site-title .circle {
+    border-radius: 80px;
+    border: 2px solid #F39800;
+    background: #FFF;
+    padding: 18px 19px;
+    color: #F39800;
+    font-size: 34px;
+    font-family: 'Yu Gothic Bold';
+    margin-right: 21px;
+}
+
+.site-main .container .introduce .site-title {
+    display: flex;
+    align-items: center;
+}
+
+.site-main .container .introduce .context-introduce {
+    color: #444;
+    font-size: 18px;
+    font-family: 'Yu Gothic';
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.site-main .container .introduce .span-introduct {
+    color: #444;
+    font-size: 18px;
+    font-family: 'Yu Gothic';
+    line-height: 30px;
+}
+.padding-left {
+    padding-left: 35px;
+}
+
+.site-introduct-bg {
+    flex-direction: row-reverse;
+    margin-top: 42px;
+}
+
+#main .container .introduce .picture-reverse {
+    position: relative;
+    max-width: 500px;
+    max-height: 400px;
+    padding-left: 20px;
+}
+
+.site-main .container .introduce .picture-reverse::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    right: 20px;
+    top: 40px;
+    z-index: -1;
+}
+
+.padding-right {
+    padding-right: 35px;
+}
+
+.site-main .container .introduce .button-next {
+    background: #F39800;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.site-main .container .introduce .button-next a {
+    color: #FFF;
+    font-size: 26px;
+    font-family: 'Yu Gothic Bold';
+    border-radius: 10px;
+    border: 2px dashed #FFF;
+    opacity: 0.5;
+    padding: 8px 68px;
+    text-decoration: none;
+}
+
+.site-main .container .introduce .button-next a img {
+    padding-right: 10px;
+}
+
+/* css introduce-teacher */
+.site-main .introduce-teachers {
+    padding: 80px 0;
+    background: #FFF1E8;
+    margin-top: 120px;
+}
+
+.site-main .introduce-teachers .row-teachers{
+    padding: 0 50px;
+    border-radius: 50px;
+    background: #FFF;
+}
+
+.site-main .introduce-teachers .container .title-introduce {
+    max-width: 468px;
+    color: #F39800;
+    margin-top: 44px;
+    font-size: 36px;
+    font-family: 'Yu Gothic Bold';
+    border-bottom: 2px solid#F39800;
+    padding-bottom: 16px;
+    margin-bottom: 34px;
+}
+
+.site-main .introduce-teachers .container .context-introduce-teachers {
+    color: #000;
+    font-size: 18px;
+    font-family: 'Yu Gothic';
+    font-weight: 400;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.site-main .introduce-teachers .container .span-introduct-teachers {
+    color: #000;
+    font-size: 18px;
+    font-family: 'Yu Gothic';
+    font-weight: 400;
+    max-width: 500px;
+}
+
+.site-main .introduce-teachers .container .brand-logo {
+    text-align: right;
+    margin-top: 26px;
+    margin-bottom: 34px;
+}
+
+.site-main .introduce-teachers .container .brand-logo img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.picture-teacher {
+    max-width: 500px;
+    max-height: 270px;
+    border-radius: 50%;
+    width: 100%;
+}
+
+.site-main .introduce-teachers .container .site-picture-teachers {
+    flex-direction: column;
+    display: flex;
+    padding-left: 23px;
+    margin-bottom: 0;
+}
+
+.site-main .introduce-teachers .container .site-picture-teachers p{
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Yu Gothic Bold';
+    margin-bottom: 44px;
+    margin-top: 30px;
+}
+
+/* css food */
+.site-main .introduce-teachers .row-food{
+    margin-top: 78px;
+    padding: 0 50px;
+    border-radius: 50px;
+    background: #FFF;
+    padding-top: 50px;
+}
+
+.site-main .introduce-teachers .row-food figcaption {
+    max-width: 500px;
+    color: #000;
+    font-family: 'Yu Gothic';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.site-main .introduce-teachers .row-food figure {
+    max-width: 500px;
+}
+
+.site-main .introduce-teachers .row-food .col-md-6:last-child{
+    padding-left: 35px;
+}
+
+.row-food img {
+    width: 100%;
+    max-width: 500px;
+}
+/* css about */
+.site-main .About-Hokenzenbu .container {
+    padding: 120px 50px;
+}
+
+.site-main .About-Hokenzenbu .container .logo-about {
+    display: block;
+    margin-bottom: 17px;
+}
+
+.site-main .About-Hokenzenbu .container .content-about{
+    max-width: 522px;
+    padding-left: 23px;
+}
+
+.site-main .About-Hokenzenbu .container h3 {
+    margin-bottom: 0;
+}
+.site-main .About-Hokenzenbu .container h3 a{
+    color: #F39800;
+    font-family: 'Yu Gothic';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: none;
+    position: relative;
+}
+
+.site-main .About-Hokenzenbu .container h3 a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #F39800;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.site-main .About-Hokenzenbu .container .content-about .context-1{
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.site-main .About-Hokenzenbu .container .content-about p{
+    color: #000;
+    font-family: 'Yu Gothic';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.picture-about {
+    border-radius: 50px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* click button */
+.site-main .click-button .button-next {
+    background: #F39800;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.site-main .click-button .button-next a {
+    color: #FFF;
+    font-size: 26px;
+    font-family: 'Yu Gothic Bold';
+    border-radius: 10px;
+    border: 2px dashed #FFF;
+    opacity: 0.5;
+    padding: 8px 68px;
+    text-decoration: none;
+}
+
+.site-main .click-button .button-next a img {
+    padding-right: 10px;
+}
+
+.site-main .click-button {
+    background: #FFF1E8;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* css product */
+.thumbnail-left {
+    width: 100%;
+    max-width: 500px;
+}
+
+.thumbnail-right {
+    width: 100%;
+    max-width: 500px;
+}
+.site-main .site-product .container {
+    padding: 120px 50px 111px 50px;
+    text-align: center;
+}
+
+.site-main .site-product .container .click-product {
+    color: #000;
+    text-align: center;
+    font-family: 'Yu Gothic';
+    font-size: 24px;
+    font-weight: 700;
+    margin: auto;
+    margin-top: 24px;
+    text-decoration: none;
+    max-width: 420px;
+    display: block;
+}
+
+.site-main .site-product .container .click-product:hover {
+    color: red;
+}
+
+.site-thumbnail-right {
+    padding-left: 35px;
+}
+
+.site-main .site-product .container h3 {
+    color: #FFF;
+    font-family: 'Yu Gothic';
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+    display: block;
+}
+
+.site-main .site-product .container .title {
+    background: #F39800;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 65px;
+    position: relative;
+}
+
+.site-main .site-product .container .svg-left {
+    position: absolute;
+    left: -14%;
+    bottom: -10px;
+    z-index: -1;
+}
+
+.site-main .site-product .container .svg-right {
+    position: absolute;
+    right: -14%;
+    bottom: -10px;
+    z-index: -1;
+}
+
+.site-main .site-product .container .title-bottom h4{
+    margin-top: 40px;
+    color: #00AEEF;
+    text-align: center;
+    font-family: 'Yu Gothic';
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* gallery */
+
+.site-main .gallery .container {
+    border-radius: 50px;
+    background: #F8F8F8;
+    padding: 80px 50px 66px 50px;
+    text-align: center;
+}
+
+.site-main .gallery .container .site-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-main .gallery .container .row-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-main .gallery .container .row-gallery img {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.site-main .gallery .container .row-gallery img:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.gallery-bottom {
+    margin-top: 55px;
+}
+
+.site-main .gallery h3 {
+    color: #F39800;
+    font-family: 'Yu Gothic';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 2px solid;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 45px;
+}
+
+/* docter */
+.site-main .docter {
+    background: #F8F8F8;
+}
+
+.site-main .docter .container {
+    margin-top: 120px;
+    padding: 90px 30px 70px 30px;
+}
+.site-main .docter .text {
+    max-width: 510px;
+    color: #444;
+    font-family: 'Yu Gothic';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.site-main .docter .text p {
+    margin-bottom: 30px;
+}
+.site-main .docter .text ul {
+    list-style: circle;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 24px;
+}
+
+.site-main .docter .container h3 {
+    color: #000;
+    font-family: 'Yu Gothic';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 48px;
+    padding-left: 10px;
+}
+
+.site-main .docter .container img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/*css form */
+
+.site-main .site-form-control .container {
+    background: #FFF;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.site-main .site-form-control .container form {
+    border: 3px dashed #F39800;
+    padding: 27px;
+    text-align: left;
+}
+
+.site-main .site-form-control .container .reservation-form {
+    max-width: 770px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.site-main .site-form-control .container h3 {
+    color: #F39800;
+    font-family: 'Yu Gothic';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    border-bottom: 2px solid #F39800;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.site-main .site-form-control .container .reservation-form label {
+    color: #212121;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.site-main .site-form-control .container .reservation-form input::placeholder {
+    color: #444;
+    font-family: 'Yu Gothic';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    opacity: 0.5;
+}
+
+.form-group, .form-row-check {
+    margin-bottom: 20px;
+}
+
+.form-control, .form-select {
+    height: 46px;
+}
+
+.form-check {
+    display: inline;
+    margin-right: 45px;
+    padding: 0;
+}
+
+.site-main .site-form-control .container .reservation-form .form-row-check label {
+    color: #444444;
+    font-size: 18px;
+    font-family: 'Yu Gothic';
+}
+
+.site-main .site-form-control .container .reservation-form .form-row-check p {
+    color: #212121;
+    font-family: 'Yu Gothic';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.site-main .site-form-control .container .reservation-form span {
+    color: red;
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+.circle-border {
+    position: relative;
+}
+
+.circle-2 {
+    position: absolute;
+    left: 2%;
+    top: 15%;
+}
+
+.form-check-label {
+    margin-left: 12px;
+}
+
+#form-10 {
+    height: 120px;
+}
+.form-check-input[type=checkbox]{
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+}
+
+.btn-primary {
+    border-radius: 5px;
+    background: #F39800;
+    height: 50px;
+    margin-top: 34px;
+    color: #FFF;
+    font-family: 'Yu Gothic';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 0 47px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#form-7 {
+    position: relative;
+    background: none;
+}
+
+.icons-date {
+    position: absolute;
+    right: 5%;
+    bottom: 19%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+
+.date-form {
+    position: relative;
+}
+
+/*css footer */
+.site-footer {
+    background: #111;
+}
+
+.site-footer .container {
+    padding: 50px 100px 30px 100px;
+}
+
+.site-footer .container .footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-footer .container nav {
+    max-width: 470px;
+    width: 50%;
+    background: #fff;
+}
+
+.site-footer .container nav img {
+    display: block;
+    margin: auto;
+    padding: 12px 0;
+}
+
+.footer-bottom {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-bottom ul li {
+    margin-right: 25px;
+    position: relative;
+    padding-right: 25px;
+}
+
+.footer-bottom ul li a{
+    color: #D7D7D7;
+    font-family: 'Yu Gothic';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.footer-bottom ul li::after {
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background: #fff;
+    content: "";
+    right: 0px;
+    top: 15%;
+}
+
+.footer-bottom ul li:last-child:after {
+    display: none;
+}
+
+.footer-bottom p {
+    color: #8C8C8C;
+    font-family: 'Yu Gothic';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.form-check .form-check-input {
+
+}
+.form-check .form-check-label {
+    padding-left: 45px;
+    position: relative;
+    cursor: pointer;
+}
+.form-check .form-check-label:before {
+    width: 30px;
+    height: 30px;
+    background: #FFF;
+    border-radius: 50%;
+    display: block;
+    content: "";
+    border: 1px solid #DFDFDF;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+.form-check input:checked + .form-check-label:before {
+    border-color: #F39800;
+}
+.form-check .form-check-label:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #F39800;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+}
+.form-check input:checked + .form-check-label:after {
+    opacity: 1;
+    visibility: visible;
+}
